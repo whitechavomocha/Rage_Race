@@ -11,11 +11,6 @@ public class SwitchGameMode : MonoBehaviour
         SceneManager.LoadScene(singlePlayerScene);
     }
 
-    public void MultiPlayerMode()
-    {
-        SceneManager.LoadScene(multiPlayerScene);
-    }
-
     public void GoToPlayStore()
     {
         Application.OpenURL("https://play.google.com/store/apps/details?id=com.AdivinisGames.com.unity.BouncyPixels");
