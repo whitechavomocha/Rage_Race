@@ -13,6 +13,6 @@ public class SwitchGameMode : MonoBehaviour
 
     public void GoToPlayStore()
     {
-        Application.OpenURL("https://play.google.com/store/apps/details?id=com.AdivinisGames.com.unity.BouncyPixels");
+        Application.OpenURL("https://play.google.com/store/apps/dev?id=7308950571385201570");
     }
 }
