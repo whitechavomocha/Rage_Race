@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 public class SwitchGameMode : MonoBehaviour
 {
     [SerializeField] private string singlePlayerScene = string.Empty;
-    [SerializeField] private string multiPlayerScene = string.Empty;
 
     public void SinglePlayerMode()
     {
