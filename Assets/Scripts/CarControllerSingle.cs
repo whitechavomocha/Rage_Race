@@ -3,17 +3,19 @@ using UnityEngine;
 public class CarControllerSingle : MonoBehaviour
 {
     [SerializeField] private float speed = 5;
-    [SerializeField] private float speedGainPerSec = 0.2f;
-    [SerializeField] private float turnSpeed = 3f;
+    [SerializeField] private float speedGainPerSec = 2f;
+    [SerializeField] private float turnSpeed = 80f;
     [SerializeField] private GameObject readyButton;
 
     private int steerValue = 0;
     private bool ready = false;
+    public bool gameReady = false;
 
     private void FixedUpdate()
     {
         if (ready)
         {
+            gameReady = true;
             Move();
         }
 
@@ -33,7 +35,7 @@ public class CarControllerSingle : MonoBehaviour
 
     private void Move()
     {
-        if (speed < 20f)
+        if (speed < 60f)
         {
             speed += speedGainPerSec * Time.deltaTime;
         }

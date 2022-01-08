@@ -14,4 +14,9 @@ public class SwitchGameMode : MonoBehaviour
     {
         Application.OpenURL("https://play.google.com/store/apps/dev?id=7308950571385201570");
     }
+
+    public void ShowLeaderBoardUI()
+    {
+        LeaderBoardManager.Instance.ShowLeaderBoard();
+    }
 }

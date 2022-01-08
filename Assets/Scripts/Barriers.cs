@@ -7,6 +7,7 @@ public class Barriers : MonoBehaviour
     {
         if (other.transform.tag == "Player")
         {
+            LeaderBoardManager.Instance.AddScoreToLeaderBoard();
             Invoke(nameof(Restart), 0.5f);
         }
     }
